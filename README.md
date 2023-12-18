@@ -3,9 +3,9 @@
 ### Inicie os containers 
     - docker compose up -d
 ### Atualize o composer
-    -  docker compose run --rm projeto-base-laravel-10-laravel.teste1 composer update
+    -  docker compose run --rm laravel.test composer update
 ### Execute a migration
-    - docker compose run --rm videocast.localhost php yii migrate
+    - docker compose run --rm localhost.test php artisan migrate
 ### Rode o npm
     - npm install
     - npm run dev
