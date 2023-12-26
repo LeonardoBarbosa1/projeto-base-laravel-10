@@ -11,7 +11,6 @@ docker-compose exec laravel.test composer update
 
 cp .env.example .env
 docker-compose exec laravel.test php artisan key:generate
-docker-compose exec laravel.test php artisan serve
 
 sail down -v
 docker compose up -d
