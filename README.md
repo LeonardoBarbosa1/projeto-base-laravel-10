@@ -7,7 +7,6 @@ docker compose up -d
 ```
 ### Rode comandos
 ```bash
-docker-compose exec laravel.test composer install
 docker-compose exec laravel.test composer update
 
 cp .env.example .env
