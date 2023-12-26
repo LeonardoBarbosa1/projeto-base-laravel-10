@@ -7,17 +7,20 @@ docker compose up -d
 ```
 ### Rode comandos
 ```bash
+
 docker-compose exec laravel.test composer update
 
+```
+```bash
+
 cp .env.example .env
+
 docker-compose exec laravel.test php artisan key:generate
 
-sail down -v
-docker compose up -d
 ```
 ### Execute a migration
 ```bash
-docker-compose exec localhost.test php artisan migrate
+docker-compose exec laravel.test php artisan migrate
 ```
 ### Rode o npm
 ```bash
@@ -25,3 +28,8 @@ npm install
 npm run dev
 ```
 
+### Caso não inicie o mysql rode 
+```bash
+sail down -v
+docker compose up -d
+```
